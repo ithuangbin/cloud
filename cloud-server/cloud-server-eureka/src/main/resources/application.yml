@@ -1,0 +1,41 @@
+#spring.profiles.active=dev
+#spring.application.name=eureka-server
+#server.port=1001
+#
+#eureka.instance.hostname=localhost
+#eureka.client.register-with-eureka=false
+#eureka.client.fetch-registry=false
+#
+#security.basic.enabled=true
+#security.user.name=admin
+#security.user.password=123456
+#
+##关闭自我保护
+#eureka.server.enableSelfPreservation=false
+#eureka.server.eviction-interval-timer-in-ms=3000
+
+server:
+  port: 1001
+pring:
+  application:
+    name: eureka-server
+  profiles:
+      active: dev
+eureka:
+  server:
+    enable-self-preservation: false
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+
+security:
+  basic:
+    enabled: true
+  user:
+    name: admin
+    password: 123456
+management:
+  security:
+    enabled: false
